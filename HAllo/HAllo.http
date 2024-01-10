@@ -1,0 +1,39 @@
+﻿@HAllo_HostAddress = https://localhost:7197
+
+
+POST {{HAllo_HostAddress}}/todoitems
+Content-Type: application/json
+
+{
+  "name":"Günter",
+  "isComplete":true
+}
+ 
+###
+
+Get {{HAllo_HostAddress}}/todoitems
+
+
+###
+
+
+GET {{HAllo_HostAddress}}/todoitems/1
+
+
+
+###
+
+PUT {{HAllo_HostAddress}}/todoitems/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Jürgen",
+  "isComplete": false
+}
+
+###
+
+DELETE {{HAllo_HostAddress}}/todoitems/8
+
+###
